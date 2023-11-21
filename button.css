@@ -1,20 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&display=swap');
 
 .button {
-  background-color: #504DA2; /* A purple color similar to the one in the image */
+  border: 1px solid #504DA2 !important;
+  background-color: #504DA2 !important;
   color: white; /* White text color */
-  font-family: 'Barlow Condensed', sans-serif; /* Barlow Condensed font */
+  font-family: "Open Sans",Helvetica,Roboto,Arial,sans-serif;
   font-size: 18px; /* An estimated font size */
   font-weight: bold; /* Bold text */
   padding: 10px 20px; /* Padding inside the button */
-  border: none; /* No border */
-  border-radius: 1px; /* Slightly rounded corners */
+  border-radius: 4px; /* Slightly rounded corners */
   cursor: pointer; /* Cursor changes to a hand icon when hovered */
   transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .button:hover {
-  background-color: #7B68EE; /* A lighter purple for hover effect */
+  outline: 2px solid #504DA2; /* Adding an outline when focused for accessibility */
+  outline-offset: 2px; /* Spacing between outline and button edge */
 }
 
 .button:active {
